@@ -13,6 +13,7 @@ $ pip install trackingshell
 Create a new Python file and import the `trackingshell` package.
 
 ```python
+#!/usr/bin/env python
 import trackingshell as ts
 ```
 
