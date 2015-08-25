@@ -96,14 +96,13 @@ class Shell(object):
         )
         self.parser.add_argument('-t', '--target', help="name of the make target", nargs="?")
         self.parser.add_argument('-c', '--command', help="command to execute", required=True)
-        self.parser.add_argument('-p', '--plugin', help="python module with plugins")
 
     # void
     def _set_plugins(self):
         self.plugins = PluginRegistry([execute_command])
 
     # void
-    def delegate(self):
+    def delegate(self, return_exit_code = False):
         # Construct a MakeTarget object
         mt = self.cls(**vars(self.parser.parse_args(self.argv)))
 
@@ -116,6 +115,10 @@ class Shell(object):
         logger_fn(exit_message, extra = mt.as_dict())
 
         # Quit
+        if return_exit_code:
+            self.mt = mt
+            return exit_code
+
         sys.exit(exit_code)
 
 # void
