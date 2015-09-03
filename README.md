@@ -1,6 +1,6 @@
-# trackingshell
+## trackingshell
 
-You can tracks makefile's targets with this tool easily. This library is part of the [night-shift](https://github.com/6wunderkinder/night-shift) framework.
+You can track the target execution of a makefile with this tool easily. This library is part of the [night-shift](https://github.com/6wunderkinder/night-shift) framework.
 
 ## Installation
 
