@@ -17,6 +17,11 @@ class MakeTarget(object):
         self.command = command
         self.__dict__.update(kwargs)
         self.logger = logger
+        self.set_logger()
+
+    # void
+    def set_logger(self):
+        pass
 
     # bool
     def has_target(self):
