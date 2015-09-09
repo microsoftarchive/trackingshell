@@ -5,11 +5,11 @@ version = '1.0'
 setup(
     name = 'trackingshell',
     version = version,
-    description = "Tracks makefiles targets.",
+    description = "You can track the target execution of a makefile with this tool easily.",
     packages = find_packages( exclude = [ 'ez_setup'] ),
     include_package_data = True,
     zip_safe = False,
-    author = 'Torsten Becker, Bence Faludi',
+    author = 'Bence Faludi, Torsten Becker',
     author_email = 'befaludi@microsoft.com',
     license = 'MIT',
     install_requires = [],
