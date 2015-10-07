@@ -1,4 +1,9 @@
-# trackingshell [![Build Status](https://travis-ci.org/wunderlist/trackingshell.svg)](https://travis-ci.org/wunderlist/trackingshell)
+# trackingshell 
+
+[![Build Status](https://travis-ci.org/wunderlist/trackingshell.svg)](https://travis-ci.org/wunderlist/trackingshell)
+![Downloads](https://img.shields.io/pypi/dm/trackingshell.svg)
+![Version](https://img.shields.io/pypi/v/trackingshell.svg)
+![License](https://img.shields.io/pypi/l/trackingshell.svg)
 
 You can track the target execution of a makefile with this tool easily. This library is part of the [night-shift](https://github.com/wunderlist/night-shift) framework. The package supports Python **2.7** & **3.3+**.
 
